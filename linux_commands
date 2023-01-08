@@ -1,6 +1,22 @@
 LINUX
 ----
 
+SHELL
+-----
+//find which shell is running
+$echo "$SHELL"
+or
+$ps -p $$  
+
+
+//List of shells
+$cat /etc/shells
+
+//switch shell 
+$chsh
+and provide udpate the line of shell to /usr/bash or wher it is located, save and exit
+
+//
 
 
 
