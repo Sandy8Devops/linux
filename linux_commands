@@ -16,7 +16,7 @@ $cat /etc/shells
 $chsh
 and provide udpate the line of shell to /usr/bash or wher it is located, save and exit
 
-//
+//Permanantly save the bash setting to all session, update the 
 
 
 
