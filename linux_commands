@@ -22,8 +22,31 @@ and provide udpate the line of shell to /usr/bash or wher it is located, save an
 
 FILE SYSTEM
 ---------
+# Permissions
 
+NETWORKING
+----------
+#NETCAT ( to check communication between two machines)
+$nc -vvv site port
 
 
 PROCESS
 ------
+to see process
+$ps //provides process id
+
+kill process
+$ kill -9 process_id
+
+find cpu process used
+$ top
+$ top | grep docker
+
+
+LOGS
+----
+#see latest log files
+$tail -f log.txt
+
+# find for specific value in a log file current
+$ tail -f log.txt | grep ERROR
