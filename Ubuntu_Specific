@@ -1,0 +1,10 @@
+SUDOERS
+-----
+In ubuntu we have default user and root password set as earlier
+but to get access to /etc/suders file need to login to root
+
+$ su -
+#provice the root user and login
+
+add user on the /etc/sudoers file 
+save and exit
