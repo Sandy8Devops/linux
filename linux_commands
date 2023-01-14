@@ -1,5 +1,23 @@
 LINUX
 ----
+After login the prompt will look like 
+sandy@server1:~$
+above sandy is user, afer @ server1 is machine , after : is current user (sandy) home directory 
+normal user has : $ sign
+if logged with root : # sign will be ther
+
+
+SYSTEM
+$uname -a //os,version, kernel info
+
+Go to Root Directory
+$ cd /
+$clear //to clear the screen
+$pwd // to see current working directory
+
+
+
+
 
 SHELL
 -----
@@ -22,6 +40,34 @@ and provide udpate the line of shell to /usr/bash or wher it is located, save an
 
 FILE SYSTEM
 ---------
+every thing image,folder, file all are files
+
+List
+$ls -R  //recursive, all inside directory. ( files inside dir as well)
+
+$ls -a  //show all files /folders hidden ones
+hidden folder/files are start with . name
+
+
+
+devices files are in /dev folders
+/bin /sbin all commands 
+/etc = config files
+
+$cd ..  //move 1 step back
+$cd ../..   // move 2 step back
+
+
+COPY (keep old copy)
+$cp 1.txt out.txt //file copy
+$cp -r. 1  out. //folder copy
+
+MOVE
+#mv 1.txt 2.txt //rename
+
+SEARCH
+
+
 # Permissions
 
 NETWORKING
