@@ -9,14 +9,14 @@ if logged with root : # sign will be ther
 
 SYSTEM
 $uname -a //os,version, kernel info
+$ cat /etc/os-release  //to find the os release files
+$ lscpu //to find the cpu
+$lsmem. //total ram used
 
 Go to Root Directory
 $ cd /
 $clear //to clear the screen
 $pwd // to see current working directory
-
-
-
 
 
 SHELL
@@ -35,6 +35,11 @@ $chsh
 and provide udpate the line of shell to /usr/bash or wher it is located, save and exit
 
 //Permanantly save the bash setting to all session, update the 
+
+
+ADMIN COMMANDS (SUPER USER COMMANDS  
+commands are in /sbin location
+$adduser User1  //must be root pivellage
 
 
 
