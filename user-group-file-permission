@@ -33,6 +33,9 @@ add user :  $adduser tom
 provide password and confirm password
 add user with in a group $useradd -G devops tom
 
+remove user from group
+$gpasswd -d devops tom 
+
 change password :  $sudo passwd tom
 provide password for tom and done
 
@@ -56,6 +59,52 @@ $usermod -G admin,devops tom //overides the group for user tom, existing group
 
 Remove user from  a Group
 $gpasswd -d tom devops  //removes tom user from devops 
+
+See groups of users
+$groups //show currrent user associated on groups
+
+
+OWNERSHIP and PERMISSIONS
+-----------
+Read, Write and Execute
+on files and folders
+
+ownership = user and group are part of ownership
+$ ls -a
+ie: -rw-rwx--- 1 tom(user) devops(group)
+
+Change ownership
+----
+$ chown user file_name
+$ chgrp group file_name
+
+Permissions
+---
+drwx rwx rwx 
+
+d=folder, if empty = file
+r=read = 4
+w=write = 2
+x=execute =1 = run a sh or other script
+
+1st --- = user owner 
+2nd --- = group owner
+3rd --- = other users or groups on 1st/2nd
+7 means= rwx
+
+change permission
+$chmod -x file //remove execute permission for all
+$chmod +x file //add execute for all
+$chmod g-w file //remve write perission to all group
+$chmod g+x file // add execute to all group
+$chmod u+x file //add exeute to current user
+$chmod o+x file //add execute for all others
+$chomd g=rw- file //read, write to current group
+
+change permission with no
+$
+
+
 
 
 
