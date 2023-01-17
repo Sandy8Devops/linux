@@ -18,6 +18,37 @@ $ cd /
 $clear //to clear the screen
 $pwd // to see current working directory
 
+PACKAGE MANAGER
+-------
+windows we have exe/msi 
+on linux we use package manager to install software package
+package are zipped/archieved libraries, which may be depdendets on other libraries
+Ubuntu : apt (advanced pacakge tool) package manager 
+eg: apt get install node
+Search :  $ apt search openjdk //see all option to install
+$ java //will show all apt options and java to install
+select one of the option and setup
+Remove: $ apt remove openjdk
+apt get vs apt = apt is more user friendly, but same for usability
+All the pacakges of softwares are pulled from a Repository
+ubuntu, Rhel, Centos have their own Repository
+$sudo apt update //will show what pacakges could be updated and from where they are located
+location of repository :  /etc/apt/sources.list file
+
+Snap 
+is another pacakge manager in ubutnu 
+eg: to setup ubunut
+$ snap install --classic code // will install vscode in ubuntu
+
+if some pacakges are not in existing repository list of url 
+need to add them in the list to pull from 
+$ sudo add-apt-repository "url..."
+
+Similary for Redhat based Linux , use yum package manager
+RHEL, CentOs, Fedora = RHEL based
+Ubunut, Debian, Mint = Debian Based
+
+
 
 SHELL
 -----
