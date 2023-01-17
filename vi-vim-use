@@ -3,3 +3,37 @@ vi = old
 vim =new (might have to install)
 
 to quickly edit some value or update a line 
+opens all types of files
+
+$ sudo apt install vim
+
+Open
+$ vim file_name
+
+2 modes ( press esc or i to switch mode)
+1. command : default mode, do navigate, search , delete, undo
+2. insert mode  : press i to insert
+
+Save
+---
+esc , go to command mode
+:wq and enter
+
+w = write
+q=quit
+!= override
+
+command mode
+------------
+y = copy line
+P = caps P to paste the line
+dd= delete line = dd on the line in command mode
+d10 =delete 10 line 
+u = undo changes 
+A = move cursor to end of line and change to insert mode
+0 = move to begining of line
+$ = move to end of line witout going to insert mode
+12G = move to line no 12
+/searchit = will search for searchit in file open and type n to move next match
+:%s/git/gitbash = will replace every string with git to gitbash
+
