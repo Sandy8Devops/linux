@@ -1,0 +1,61 @@
+3 types of accounts
+
+root user has every access also called super user
+regular user :  user create to use specific need
+service user : used internally by linux to do system works ie: mysql user created default to manage mysql db
+
+have their own space and directory structures
+
+Don't Do :  run services with root user, create specific user and asssign permission to that service user
+
+GROUPS and PERMISSION
+----
+permission could be given to 
+a. user 
+b. group
+c. other group
+
+Files
+----
+/etc/passwd  #stores user info, only root can udpate but other can use it
+Format:
+username:password:uid:gid:gecos:homedir:shell
+x in password = encrypted password save in  /etc/shadow
+gid stored in /etc/group file
+shell: user default shell to use after login
+
+/etc/shadow
+/etc/group
+
+Note:  don't edit the files directly , use commands 
+eg: 
+add user :  $adduser tom 
+provide password and confirm password
+add user with in a group $useradd -G devops tom
+
+change password :  $sudo passwd tom
+provide password for tom and done
+
+switch user
+$ su - tom
+$ su -  //switch to root user
+
+Creating Group:
+$groupadd devops
+
+Add user to Group
+$usermod -g devops tom  //add tom to group devops
+
+when user is created a default group is created with it ie: for user tom group tom is also created
+
+Delete group
+$delgroup tom
+
+A user can be added to multiple groups
+$usermod -G admin,devops tom //overides the group for user tom, existing group
+
+Remove user from  a Group
+$gpasswd -d tom devops  //removes tom user from devops 
+
+
+
