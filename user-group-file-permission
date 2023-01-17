@@ -102,7 +102,15 @@ $chmod o+x file //add execute for all others
 $chomd g=rw- file //read, write to current group
 
 change permission with no
-$
+- - - = rwx= 4 2 1 combination
+ 0 = --- = no permission
+ 1 = --x = execute
+ 2 = -w- = write
+ 3 = -wx = write and execute
+ ..
+ 5 = r-x = read and execute
+ ..
+ 7 = rwx = read, write,execute
 
 
 
