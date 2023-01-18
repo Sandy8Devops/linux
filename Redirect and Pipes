@@ -1,0 +1,41 @@
+System log files
+-----
+/var/log/syslog
+
+$vim /var/log/syslog
+
+Page wise view (less)
+------
+$vim /var/log/syslog | less
+use spacebar for next page 
+q to quit
+
+Search with grep
+-----
+filter with substring
+$ history | grep sudo
+$ history | grep sudo | less   //even show page wise
+$ ls /usr/bin | grep python //shows list of python version
+
+Redirection
+-----
+saving the command out to file with >
+$ history | grep sudo > sudo_commands.txt  //will save the output on file
+>> is used to append content
+$ history | grep sh >> sudo_commands.txt //will append the previous content
+
+
+INPUT (STDION (0))  
+OUTPUT (STDOUT(1) 
+ERROR (STDERR (2))
+
+if command throws error eg: file do not exist
+the output could be saved in 
+
+only store error on file
+$ find . /usr/ "rock"  2>error.txt  //if error occurs will be saved in error.txt
+
+//executing more then 1 commmand with ;
+$ clear; sleep 5 ; echo "This is test"
+
+
