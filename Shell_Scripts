@@ -1,0 +1,33 @@
+Shell (sh)
+----
+shell is a program that interprets, translates and executes the command that Os Kernet can understand
+
+Diff types of shell
+-------
+> sh (bourune Shell) : /bin/sh.  //default
+> Bash (Bourne Again Shell) : /bin/bash  //standard in modern Linux
+so shell script or bash script is same now a days
+
+
+all single commands could be executed one by one in linux or with
+scripts in .sh file 
+
+programming concepts with linux command 
+eg:
+check version
+bulk operations
+adding 100 users and adding permission
+
+eg:-
+$vi setup.sh
+#to tell which shell is used in script, use Shebang line
+
+#!/bin/bash
+echo "Configuration is started"
+
+execute 
+$./setup.sh
+
+if execute permission is not set
+$chmod u+x setup.sh
+re-run the program 
