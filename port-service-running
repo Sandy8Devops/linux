@@ -1,0 +1,24 @@
+
+//Check if port is running
+$lsof -i:5000
+
+ie:
+lsof -i:5000
+COMMAND   PID   USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+python3 63381 devops    3u  IPv4 179901      0t0  TCP *:5000 (LISTEN)
+python3 63381 devops    5u  IPv4 179901      0t0  TCP *:5000 (LISTEN)
+
+Kill the process
+---------
+PythonDevEnv) devops@devops:~/Python_Projects/PyApp1$ lsof -i:5000
+COMMAND   PID   USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+python3 63381 devops    3u  IPv4 179901      0t0  TCP *:5000 (LISTEN)
+python3 63381 devops    5u  IPv4 179901      0t0  TCP *:5000 (LISTEN)
+curl    65519 devops    5u  IPv4 266561      0t0  TCP Sandeshs-MBP.attlocal.net:59432->Sandeshs-MBP.attlocal.net:5000 (ESTABLISHED)
+(PythonDevEnv) devops@devops:~/Python_Projects/PyApp1$ kill -9 65519
+[2]+  Killed                  curl -k http://192.168.1.95:5000/
+(PythonDevEnv) devops@devops:~/Python_Projects/PyApp1$ kill -9 63381
+(PythonDevEnv) devops@devops:~/Python_Projects/PyApp1$ kill -9 63381
+-bash: kill: (63381) - No such process
+
+Restart the service and see to use the port
