@@ -1,0 +1,9 @@
+on Linux Server
+---
+$ apt install openssh-server
+
+
+on client
+-----
+$ssh user@linuxServer
+accept and connect
